@@ -1,4 +1,4 @@
-require('nvim-treesitter.configs').setup({
+require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"comment",
 		"html",
@@ -31,10 +31,10 @@ require('nvim-treesitter.configs').setup({
 		},
 	},
 })
-require('treesitter-context').setup{
-    enable = true,
-    max_lines = 0,
-    min_window_height = 0,
-    line_numbers = true,
-    mode = 'topline'
-}
+require("treesitter-context").setup({
+	enable = true,
+	max_lines = 0,
+	min_window_height = 0,
+	line_numbers = true,
+	mode = "topline",
+})

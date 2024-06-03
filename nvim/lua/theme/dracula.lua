@@ -1,4 +1,4 @@
-require('dracula').setup()
+require("dracula").setup({})
 
 vim.cmd([[
 colorscheme dracula

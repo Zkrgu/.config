@@ -1,1 +1,1 @@
-require('theme.dracula')
+require("theme.dracula")

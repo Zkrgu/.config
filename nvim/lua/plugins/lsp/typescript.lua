@@ -1,1 +1,3 @@
-require('lspconfig').tsserver.setup({})
+-- require('lspconfig').tsserver.setup({})
+
+require("typescript-tools").setup({})
