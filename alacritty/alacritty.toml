@@ -1,0 +1,25 @@
+[font]
+normal = { family = "Hack Nerd Font Mono"}
+[colors.primary]
+foreground = "#F8F8F2"
+background = "#282A36"
+[colors.normal]
+black = "#262626"
+red = "#E356A7"
+green = "#42E66C"
+yellow = "#E4F34A"
+blue = "#9B6BDF"
+magenta = "#E64747"
+cyan = "#75D7EC"
+white = "#EFA554"
+[colors.bright]
+black = "#7A7A7A"
+red =  "#FF79C6"
+green = "#50FA7B"
+yellow = "#F1FA8C"
+blue = "#BD93F9"
+magenta = "#FF5555"
+cyan = "#8BE9FD"
+white = "#FFB86C"
+[window]
+opacity = 0.7
