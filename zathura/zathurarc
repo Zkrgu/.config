@@ -1,0 +1,14 @@
+set font "Hack Nerd Font Mono 12"
+
+set default-bg rgba(40,42,52,0.7)
+
+set inputbar-fg "#f8f8f2"
+set inputbar-bg rgba(40,42,52,0)
+
+set statusbar-fg "#f8f8f2"
+set statusbar-bg rgba(68,71,90,0.7)
+
+set recolor true
+set recolor-lightcolor rgba(40,42,52,0)
+set recolor-darkcolor "#f8f8f2"
+set recolor-keephue true
