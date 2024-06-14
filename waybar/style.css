@@ -1,0 +1,97 @@
+@define-color background rgba(0x28, 0x2a, 0x36, 0.7);
+@define-color foreground #f8f8f2;
+
+@define-color black #262626;
+@define-color red #e356a7;
+@define-color green #42e66c;
+@define-color yellow #e4f34a;
+@define-color blue #9b6bdf;
+@define-color magenta #e64747;
+@define-color cyan #75d7ec;
+@define-color white #efa554;
+
+@define-color bright-black #7A7A7A;
+@define-color bright-red  #FF79C6;
+@define-color bright-green #50FA7B;
+@define-color bright-yellow #F1FA8C;
+@define-color bright-blue #BD93F9;
+@define-color bright-magenta #FF5555;
+@define-color bright-cyan #8BE9FD;
+@define-color bright-white #FFB86C;
+
+/* Root container */
+#waybar {
+	background: none;
+}
+
+#modules-right {
+	padding: 8px;
+	/* display: flex;
+	gap: 8px; */
+}
+
+/* Workspaces config */
+#workspaces {
+	background-color: @background;
+	border-radius: 5rem;
+}
+/* #workspaces button:first-child { */
+/* 	border-radius: 50% 0 0 50%; */
+/* } */
+/* #workspaces button:last-child { */
+/* 	border-radius: 0 50% 50% 0; */
+/* } */
+#workspaces button {
+	color: @foreground;
+	border-radius: 0;
+}
+#workspaces button.visible {
+	border-radius: 5rem;
+	background-color: @blue;
+}
+#workspaces button:hover {
+	background-color: @background;
+}
+
+
+/* Battery config */
+#battery.warning {
+	color: @yellow;
+}
+#battery.critical {
+	color: @red;
+}
+
+tooltip {
+	background-color: @background;
+	color: @foreground;
+}
+
+/* Module common style */
+.modules-right .module {
+	padding: 0 0.5rem;
+}
+
+/* Icon module style */
+#battery,
+#network {
+	font-family: 'Hack Nerd Font Mono';
+	font-size: 3rem;
+	margin: -1rem 0;
+}
+#custom-notification {
+	font-family: 'Hack Nerd Font Mono';
+	font-size: 2rem;
+	margin: -1rem 0;
+}
+
+#clock {
+	font-weight: bold;
+}
+
+.modules-right {
+	border-radius: 0 0 0 1rem;
+	padding-left: 0.5rem;
+	background-color: @background;
+	color: @foreground;
+}

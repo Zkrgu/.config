@@ -1,0 +1,39 @@
+{
+	"modules-center": [ "hyprland/workspaces",  ],
+	"modules-right": [ "memory", "network", "battery", "clock", "custom/notification"],
+	"reload_style_on_change": true,
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15,
+		},
+		"format": "{icon}",
+		"format-charging": "\uf376",
+		"format-icons": ["", "", "", "", "",],
+	},
+	"network": {
+		"format-wifi": "",
+		"format-ethernet": "",
+		"tooltip-format-wifi": "{essid}",
+	},
+	"custom/notification": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "<span foreground='red'><sup></sup></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-none": "",
+			"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"inhibited-none": "",
+			"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-inhibited-none": "",
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true,
+	},
+}
