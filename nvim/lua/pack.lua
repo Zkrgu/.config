@@ -25,6 +25,8 @@ require("packer").startup(function(use)
 	use("hrsh7th/cmp-nvim-lua")
 	use("hrsh7th/cmp-omni")
 	use("hrsh7th/cmp-cmdline")
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
 	-- language server
 	use("neovim/nvim-lspconfig")
 	-- color scheme
