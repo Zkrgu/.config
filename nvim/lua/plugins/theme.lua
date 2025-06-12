@@ -13,7 +13,7 @@ return {
 			hi TelescopeBorder guibg=none ctermbg=none
 			hi WinSeparator guibg=none ctermbg=none
 			hi NormalFloat guibg=none ctermbg=none
-			hi FloatBorder guibg=none ctermbg=none
+			hi FloatBorder guifg=#6272a4 guibg=none ctermbg=none
 			]])
 		end,
 	},

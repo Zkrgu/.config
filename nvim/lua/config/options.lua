@@ -30,3 +30,5 @@ vim.opt.listchars = { tab = "» ", lead = "·", trail = "·", nbsp = "␣" }
 vim.opt.undofile = true
 
 vim.g.health = { style = "float" }
+
+vim.o.winborder = 'rounded'
