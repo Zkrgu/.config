@@ -1,5 +1,3 @@
-require("pack")
-require("set")
-require("remap")
-require("plugins")
-require("theme")
+require("config.options")
+require("config.keymaps")
+require("config.lazy")
