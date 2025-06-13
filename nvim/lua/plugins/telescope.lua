@@ -5,12 +5,18 @@ return {
 		config = function()
 			require("telescope").setup({
 				defaults = {
+					vimgrep_arguments = { "rg", "--no-heading", "--line-number", "--column", "--smart-case", "--with-filename", "--hidden", "--glob", "!**/.git/*" },
 					mappings = {
 						i = {
 							["<C-h>"] = "which_key",
 						},
 					},
 				},
+				pickers = {
+					find_files = {
+						find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+					},
+				}
 			})
 
 			local builtin = require("telescope.builtin")

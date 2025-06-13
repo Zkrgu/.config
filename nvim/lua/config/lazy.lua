@@ -28,4 +28,5 @@ require("lazy").setup({
 		border = "rounded",
 	},
 	checker = { enabled = true },
+	change_detection = { enabled = false }
 })
