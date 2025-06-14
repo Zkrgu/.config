@@ -9,7 +9,7 @@
 		},
 		"weighted-average": true,
 		"format": "{icon}",
-		"format-charging": "\uf376",
+		"format-charging": "󱐌",
 		"format-icons": ["", "", "", "", "",],
 	},
 	"network": {
