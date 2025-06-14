@@ -7,13 +7,14 @@
 			"warning": 30,
 			"critical": 15,
 		},
+		"weighted-average": true,
 		"format": "{icon}",
 		"format-charging": "\uf376",
 		"format-icons": ["", "", "", "", "",],
 	},
 	"network": {
 		"format-wifi": "",
-		"format-ethernet": "",
+		"format-ethernet": "",
 		"tooltip-format-wifi": "{essid}",
 	},
 	"custom/notification": {

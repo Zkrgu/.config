@@ -30,9 +30,29 @@ return {
 			require("lspconfig")
 			local servers = {
 				pyright = {},
-				rust_analyzer = {},
+				rust_analyzer = {
+					settings = {
+						["rust-analyzer"] = {
+							imports = {
+								granularity = {
+									group = "module",
+								},
+								prefix = "self",
+							},
+							cargo = {
+								buildScripts = {
+									enable = true,
+								},
+							},
+							procMacro = {
+								enable = true,
+							},
+						},
+					},
+				},
 				kotlin_lsp = {},
 				eslint = {},
+				gopls = {},
 				lua_ls = {
 					settins = {
 						Lua = {
@@ -80,5 +100,19 @@ return {
 				})
 			}
 		},
+	},
+	{
+		"scalameta/nvim-metals",
+		config = function()
+			local metal_config = require("metals").bare_config()
+
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = { "scala", "sbt", "java" },
+				callback = function()
+					require("metals").initialize_or_attach(require("metals").bare_config())
+				end,
+				group = vim.api.nvim_create_augroup("nvim-metals", {clear = true}),
+			})
+		end,
 	}
 }
