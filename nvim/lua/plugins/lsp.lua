@@ -16,7 +16,6 @@ return {
 				opts = {
 					registries = {
 						"github:mason-org/mason-registry",
-						"file:~/projects/mason-registry",
 					},
 					ui = {
 						border = "rounded",
@@ -50,6 +49,7 @@ return {
 						},
 					},
 				},
+				kotlin_language_server = {},
 				kotlin_lsp = {},
 				eslint = {},
 				gopls = {},
@@ -111,7 +111,7 @@ return {
 				callback = function()
 					require("metals").initialize_or_attach(require("metals").bare_config())
 				end,
-				group = vim.api.nvim_create_augroup("nvim-metals", {clear = true}),
+				group = vim.api.nvim_create_augroup("nvim-metals", { clear = true }),
 			})
 		end,
 	}

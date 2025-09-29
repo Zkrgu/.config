@@ -42,6 +42,22 @@ return {
 				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 				rust = { "rustfmt" },
 			},
+			formatters = {
+				prettier = {
+					condition = function(ctx)
+						return vim.fs.find(function(name)
+							return name:match('%.prettierrc.*')
+						end, { path = ctx.filename, upward = true })[1]
+					end,
+				},
+				prettierd = {
+					condition = function(ctx)
+						return vim.fs.find(function(name)
+							return name:match('%.prettierrc.*')
+						end, { path = ctx.filename, upward = true })[1]
+					end,
+				},
+			},
 		},
 		init = function()
 			vim.api.nvim_create_user_command("FormatDisable", function(args)
